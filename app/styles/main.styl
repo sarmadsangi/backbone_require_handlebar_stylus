@@ -1,0 +1,75 @@
+@import 'commons/variables'
+@import 'commons/mixins'
+@import 'todos/todos'
+
+html,
+body 
+	margin 0
+	padding 0
+
+body 
+	font 14px default-font-family
+	line-height default-line-height
+	background default-background-color
+	color default-color
+	width 520px
+	margin 0 auto
+	-webkit-font-smoothing antialiased
+
+
+	#instructions
+		margin 10px auto
+		color #777777
+		default-text-shadow
+		text-align center
+		a
+			color #336699
+
+	#credits
+		margin 30px auto
+		color #999
+		default-text-shadow
+		text-align center
+		a
+			color #888
+
+
+	#main 
+		display none
+		margin-top medium
+
+
+	footer 
+		display none
+		margin 0 -20px -20px -20px
+		overflow hidden
+		color #555555
+		background #f4fce8
+		border-top 1px solid #ededed
+		padding 0 20px
+		line-height 37px
+		default-border-radius()
+
+		#clear-completed 
+			float right
+			line-height 20px
+			text-decoration none
+			background rgba(0, 0, 0, 0.1)
+			color #555555
+			font-size 11px
+			margin-top 8px
+			margin-bottom 8px
+			padding 0 10px 1px
+			cursor pointer
+			vendor('border-radius', 12px)
+			vendor('box-shadow', default-transparency 0 -1px 0 0)
+			pop()
+			&:hover
+				background rgba(0, 0, 0, 0.15)
+				vendor('box-shadow', rgba(0, 0, 0, 0.3) 0 -1px 0 0)
+			&:active 
+				position relative
+				top 1px
+
+footer
+	display block

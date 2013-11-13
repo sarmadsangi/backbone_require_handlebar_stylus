@@ -1,0 +1,26 @@
+{
+  "name": "todoMVC",
+  "author": "sarmadsangi",
+  "version": "0.0.1",
+
+  "repository" :
+  { 
+    "type" : "git",
+    "url" : "http://github.com/sarmadsangi/backbone_require_handlebar_stylus.git"
+  },
+
+  "dependencies": {
+    "express": "latest"
+    },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.4.1",
+    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-stylus": "*"
+  },
+  "engines": {
+    "node": ">=0.10.21"
+  }
+}

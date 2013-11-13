@@ -1,0 +1,30 @@
+@import 'variables'
+@import 'animate_keyframes'
+
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    -ms-{prop} args
+    -o-{prop} args
+    {prop} args
+
+default-box-shadow()
+	vendor('box-shadow', default-transparency 0 2px 6px 0)
+
+default-form-box-shadow()
+	vendor('box-shadow', default-transparency 0 1px 2px 0 inset)
+
+default-border-radius()
+	vendor('border-radius', 0 0 small small)
+
+default-text-shadow()
+	text-shadow rgba(255, 255, 255, 0.8) 0 1px 0
+
+animate(anim-name)
+	vendor('animation-duration', 120ms)
+	vendor('animation-name', anim-name)
+
+pop()
+	vendor('animation', popup .2s 1)
+	vendor('transform-origin', center)
+

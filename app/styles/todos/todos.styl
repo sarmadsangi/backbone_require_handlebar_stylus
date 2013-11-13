@@ -1,0 +1,97 @@
+@import 'commons/variables'
+@import 'commons/mixins'
+
+#todoapp 
+	background white
+	padding large
+	margin-bottom xlarge
+	default-box-shadow()
+	default-border-radius()
+
+	h1 
+		font-size 36px
+		font-weight bold
+		text-align center
+		padding 0 0 10px 0
+		
+	#main
+		.toggle-all-label
+			color gray
+			font-size medium-font-size
+
+
+	input[type="text"] 
+		width 466px
+		font-size 24px
+		font-family inherit
+		line-height default-line-height
+		border 0
+		outline none
+		padding 6px
+		border 1px solid #999999
+		default-form-box-shadow()
+
+	input::-webkit-input-placeholder 
+		font-style italic
+
+	#todo-list 
+		margin 10px 0
+		padding 0
+		list-style none
+
+		.edit 
+			display none
+
+		.todo-item
+			animate('slidein')
+			padding 18px 20px 18px 0
+			position relative
+			font-size 24px
+			border-bottom 1px solid #cccccc
+			&:last-child 
+				border-bottom none
+			&:hover
+				background-color #F7F7F7
+				.destroy
+					display block
+
+		.done
+			label 
+				color #777777
+				text-decoration line-through
+
+		.destroy 
+			position absolute
+			right 5px
+			top 20px
+			display none
+			cursor pointer
+			width 30px
+			height 30px
+			background url('/images/delete.png')
+			background-position -43px -3px
+			&:hover
+				background-position -3px -3px
+
+
+  		.editing 
+			border-bottom none
+			margin-top -1px
+			padding 0
+			&:last-child
+				margin-bottom -1px
+			.edit 
+				display block
+				width 444px
+				padding 13px 15px 14px 20px
+				margin 0
+			.view 
+				display none
+				label 
+					word-break break-word
+
+	#todo-count
+		span
+			font-weight bold
+
+
