@@ -6,7 +6,7 @@ After that i added stylus and handlebars to make things more easier for scalibil
 to compile stylus into css and minify it respectively, While app runs on nodejs server.
 
 # Demo
-[a link](http://todo-mvc-backbone-app.herokuapp.com)
+[Todo MVC - Backbonejs, requirejs, handlebars & stylus](http://todo-mvc-backbone-app.herokuapp.com)
 
 # Usage
 
