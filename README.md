@@ -5,10 +5,10 @@ and Stylus for modular css. Initially BackboneJS TodoMVC was taken and modulariz
 After that i added stylus and handlebars to make things more easier for scalibility. Grunt is also added
 to compile stylus into css and minify it respectively, While app runs on nodejs server.
 
-# Demo
+### Demo
 [Todo MVC - Backbonejs, requirejs, handlebars & stylus](http://todo-mvc-backbone-app.herokuapp.com)
 
-# Usage
+### Usage
 
 1. git clone repo
 2. npm install
